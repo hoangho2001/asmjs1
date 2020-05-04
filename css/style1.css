@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none !important;
+} 
+
+img{
+    width: 100%;
+}
+body{
+    font-family: Tahoma;
+    
+    font-size: 18px;
+}
+
+#nav-bar{
+    width: 100%;
+    height: 50px;
+    background-color: pink;
+    margin-bottom: 50px;
+}
+.tong{
+    width: 1600px;
+    height: 50px;
+    background-color: pink;
+    margin: 0 auto;
+    
+}
+.thanh1{
+    width: 800px;
+    height: 50px;
+    background-color: pink;
+    float: left;
+    margin-left: 100px;
+}
+ul.sub-menu > li{
+    list-style: none;
+    float: left;
+    position: relative;
+}
+ul.sub-menu > li > a{
+    list-style: none !important;
+    text-decoration: none;
+    color: black;
+    padding: 0px 25px 0px 25px;
+    line-height:50px ;
+    display: block;
+    
+}
+ul.sub-menu > li > a:hover{
+    background-color: cornsilk;
+}
+ul.menucon {
+    width: 130px;
+    background-color: pink;
+    min-height: 100px;
+    display: none;
+    position: absolute;
+
+}
+ul.menuxon li {
+    list-style: none;
+    
+}
+ul.menucon > li > a{
+    list-style: none !important;
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-indent: 10px;
+    line-height: 50px;
+    border-top: 1px solid white;
+
+}
+ul.menucon li a:hover{
+    background-color: cornsilk;
+}
+ul.sub-menu > li:hover ul.menucon {
+    display: block;
+}
+.thanh2{
+    width: 45px;
+    height: 45px;
+    background-color:pink;
+    float: left;
+    margin-left: 200px;
+}
+
+.thanh2 :hover{
+    background-color: cornsilk;
+    opacity: 1;
+}
+
+#hienthi{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.sanpham{
+    flex-basis: 20%;
+    border: 1px solid red;  
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 10px 20px;
+}
+.sanphamten{
+    font-size: 20px;
+    line-height: 30px;
+
+}
+.sanphamgiagoc{
+    font-size: 12px;
+    color: red;
+    text-decoration: line-through;
+}
+.khuvuc{
+    font-size: 14px;
+    color: #666;
+    text-align: right;
+    margin-bottom: 30px;
+}
+.dat{
+    height: 30px;
+    width: 90%;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    background-color: rgb(194, 57, 80);
+    text-align: center;
+    color: white;  
+    cursor: pointer;
+}
+.dat:hover {
+    background-color: rgb(145, 42, 59);
+}
+.phan-tram{
+    border-radius: 45px 45px;
+    background-color: red;
+    font-size: 14px;
+    color: white;
+    width: 45px;
+    height: 45px;
+    float: right;
+    padding: 7px;
+    line-height: 28px;
+}
+.thanh1{
+    position: relative;
+    z-index: 9999999999;
+}
+.khung-slider{
+    width: 1200px;
+    height: 500px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.anh{
+    max-height: 500px;
+}
+
+.nut-xoa-san-pham{
+    cursor: pointer;
+}
+.nut-xoa-san-pham i{
+    pointer-events: none;
+}
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .from{
+            width: 30%;
+            border: 1px solid  #ddd;
+            box-shadow: 2px 2px 4px  #ddd;
+            padding: 30px;
+            border-radius: 5px;
+            margin: auto;
+        }
+        .from label,input, button{
+            width: 100%;
+            display: block;
+            margin-top: 10px;
+        }
+        .from input,button{
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .from .orror{
+            font-size: 12px;
+            font-style: italic;
+            color: red;
+            line-height: 12px;
+            height: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="from">
+        <label for="hoten"> họ tên</label>
+        <input type="text" id="hoten">
+        <label id="thongbaoloihoten" for="hoten" class="orror"></label>
+
+        <label for="sodienthoai">số điện thoại</label>
+        <input type="number" id="sodienthoai">
+        <label id="thongbaoloisdt" for="sodienthoai" class="orror"></label>
+
+        <button onclick="dangki()" class="btn"> Đắng kí</button>
+    </div>
+    <script>
+        function dangki(){
+            if (kiemtrafromdangki()==true) {
+                console.log("thực hiện đăng kí");
+            }
+        }
+        function kiemtrafromdangki(){
+            var hople = true;
+
+            var nodehoten= document.getElementById("hoten")
+            var nodesodienthoai = document.getElementById("sodienthoai")
+            var hoten = nodehoten.value;
+            var sodienthoai = nodesodienthoai.value;
+            console.log("Họ Tên"+sodienthoai);
+            console.log("số điện thoại"+sodienthoai);
+
+            var  nodethongbaoloihoten = document.getElementById("thongbaoloihoten")
+            var nodethongbaoloisdt = document.getElementById("thongbaoloisdt")
+            nodethongbaoloisdt.innerHTML = "";
+            nodethongbaoloihoten.innerHTML = "";
+
+
+            if (hoten==null||hoten.length <= 0) {
+               
+                nodethongbaoloihoten.innerHTML = "Họ tên ko được để trống"
+                hople = false;
+            }
+            if (sodienthoai == null||sodienthoai.length <= 10 || sodienthoai.length > 11) {
+                
+                nodethongbaoloisdt.innerHTML = "số điện thoại ko đc để trống"
+                hople = false;
+            }
+               
+            return hople;
+        }
+    </script>
+</body>
+</html>

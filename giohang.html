@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="css/style1.css">
+    <script src="https://kit.fontawesome.com/f20d460fd9.js" crossorigin="anonymous"></script>
+    <script src="js/sanPham2.js"></script>
+    <style>
+        *{
+         
+         margin: 0;
+         padding: 0  ;
+         box-sizing: border-box;
+        }
+        img{
+            width: 100%;
+            
+        }
+        input{
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        #giohangmua{
+            border: 1px solid #ddd;
+            box-shadow: 2px 2px 4px #ddd;
+            margin: 0 auto;
+            max-width: 1100px;
+            padding: 20px;
+
+        }
+        .itemgiohang{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .itemgiohang .hinhAnh img{
+            width: 60px;
+            height: 60px;
+        }
+        .itemgiohang .hinhAnh, .tongtien{
+            flex: 1;
+            margin-left: 20px;
+
+        }
+        .soluong{
+            width: 100px;
+        }
+        .tongtien{
+            font-size: 15px;
+        }
+        .itemgiohang .gia{
+            flex: 2;
+        }
+        .itemgiohang .ten{
+            flex: 3;
+        }
+        .itemgiohang .gia .giagoc{
+            font-size: 12px;
+            text-decoration: line-through;
+            color: red;
+        }
+        .itemgiohang .hanhdong i:hover{
+            color: red;
+        }
+       
+        .khung-thanh-tien{
+            width: 1200px;
+            display: flex;
+            margin: 0 auto;
+        }
+        .khung-thanh-tien p{
+            margin-right: 5px;
+            width: fit-content;
+            
+        }
+        .thanh-tien{
+            color: red;
+            font-size: 18px;
+        }
+
+        /* thông tin  */
+        .from{
+            width: 50%;
+            border: 1px solid  #ddd;
+            box-shadow: 2px 2px 4px  #ddd;
+            padding: 30px;
+            border-radius: 5px;
+            margin: auto;
+            margin-top: 70px;
+        }
+        .from label,input, button{
+            width: 100%;
+            display: block;
+            margin-top: 10px;
+        }
+        .from input,button{
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .from .orror{
+            font-size: 12px;
+            font-style: italic;
+            color: red;
+            line-height: 12px;
+            height: 12px;
+        }
+        .khung-thanh-tien{
+            width: 300px;
+            height: 40px;
+            margin-left: 1100px;
+            margin-top: 10px;
+
+        }
+       
+    </style>
+</head>
+
+<body>
+    <nav id="nav-bar">
+        <div class="tong">
+             <div class="thanh1">
+                 <ul class="sub-menu">
+                     <li>
+                         <a href="/lab5.html"> Trang chủ</a>
+                         <ul class="menucon"> 
+                             <li><a href="#">Điện Thoại</a></li>
+                             <li><a href="#">Phụ Kiện</a></li>
+                         </ul>
+                     </li>
+                     <li>
+                         <a href="#">Điện thoại</a>
+                         <ul class="menucon">
+                             <li><a href="#">Iphone</a></li>
+                             <li><a href="#">SamSung</a></li>
+                         </ul>
+                     </li>
+                     <li>
+                         <a href="#">phụ kiện</a>
+                         <ul class="menucon"> 
+                             <li><a href="#">Tai nghe</a></li>
+                             <li><a href="#">Pin</a></li>
+                             <li><a href="#">Cục sạc</a></li>
+                         </ul>
+                     </li>
+                 </ul>
+             </div>
+             <div class="thanh2">
+                 <a href="#">
+                     <img src="anh/gio.png">
+                 </a>
+             </div>
+        </div>
+
+     </nav> 
+     <div id="giohangmua">
+       
+     </div>
+     <div class ="khung-thanh-tien">
+       <p>Thành tiền : </p>
+       <p class="thanh-tien" id = "thanhtien"> </p>
+     </div>
+     <div class="from">
+        <label for="hoten"> họ tên</label>
+        <input type="text" id="hoten">
+        <label id="thongbaoloihoten" for="hoten" class="orror"></label>
+
+        <label for="sodienthoai">số điện thoại</label>
+        <input type="number" id="sodienthoai">
+        <label id="thongbaoloisdt" for="sodienthoai" class="orror"></label>
+
+        <label for="diachi"> địa chỉ </label>
+        <input type="text" id="diachi">
+        <label id="thongbaoloidiachi" for="diachi" class="orror"></label>
+
+        <label for="email"> email</label>
+        <input type="text" id="email">
+        <label id="thongbaoloiemail" for="email" class="orror"></label>
+
+        <textarea name="noidung" id="noidung" cols="100" rows="20">
+
+            
+
+
+        </textarea>
+
+
+        <script>
+
+        </script>
+
+
+
+
+
+
+     </div>
+     <script src="js/hotro.js"></script>
+     <script src="js/giohang.js"></script>
+</body>
+</html>
